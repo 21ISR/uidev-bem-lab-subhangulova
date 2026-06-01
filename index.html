@@ -14,42 +14,60 @@
     <body>
         <!-- НАВИГАЦИЯ -->
         <nav class="nav">
-            <div class="nav__logo">
+            <div class="logo">
                 ЗВУ
-                <span>К</span>
+                <span class = "logo__accent">К</span>
             </div>
-            <ul class="nav__item">
-                <li><a href="#">Курсы</a></li>
-                <li><a href="#">Преподаватели</a></li>
-                <li><a href="#">Цены</a></li>
-                <li><a href="#">О нас</a></li>
+            <ul class="menu">
+                <li class="menu__link">
+                    <a href="#">Курсы</a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">Преподаватели</a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">Цены</a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">О нас</a>
+                </li>
             </ul>
-            <button class="nav__button">Начать бесплатно</button>
+            <button class="button--primary">
+                Начать бесплатно
+            </button>
         </nav>
 
         <!-- HERO-СЕКЦИЯ -->
         <section class="hero">
-            <div class="txt_blk">
-                <span class="tag1">Музыкальная школа нового поколения</span>
-                <h1 class="hero__tittle">
+            <div class="hero__content">
+                <span class="hero__tag">
+                    Музыкальная школа нового поколения
+                </span>
+                <h1 class="hero__title">
                     Учись играть
-                    <span class="hero__red">так, как чувствуешь.</span>
+                    <span class="hero__title-accent">
+                        так, как чувствуешь.
+                    </span>
                 </h1>
                 <p class="hero__description">
                     Онлайн-курсы по гитаре, фортепиано, вокалу и звукозаписи.
                     Живые уроки с профессионалами, гибкий график и сообщество из
                     12 000 музыкантов.
                 </p>
-                <div class="btns_wr">
-                    <button class="main_b">Выбрать курс</button>
-                    <button class="sec_b">Смотреть демо ▶</button>
+                <div class="hero__buttons">
+                    <button class="button button--primary">
+                        Выбрать курс
+                    </button>
+                    <button class="button button--secondar">
+                        Смотреть демо ▶
+                    </button>
                 </div>
             </div>
-            <div class="big_num">♪</div>
+            <div class="hero__note">♪</div>
         </section>
 
         <!-- ВОЛНОВАЯ ДЕКОРАЦИЯ -->
-        <div class="WvFm">
+        <div class="waveform">
             <div class="bar" style="height: 12px"></div>
             <div class="bar" style="height: 28px"></div>
             <div class="bar" style="height: 20px"></div>
@@ -93,33 +111,33 @@
         </div>
 
         <!-- СТАТИСТИКА -->
-        <div class="sTaT">
-            <div class="s_item">
-                <span class="bignumb">12K+</span>
-                <span class="smallt">Студентов</span>
+        <div class="stats">
+            <div class="stats_item">
+                <span class="stats__value">12K+</span>
+                <span class="stats__label">Студентов</span>
             </div>
-            <div class="s_item">
-                <span class="bignumb">48</span>
-                <span class="smallt">Курсов</span>
+            <div class="stats_item">
+                <span class="stats__value">48</span>
+                <span class="stats__label">Курсов</span>
             </div>
-            <div class="s_item">
-                <span class="bignumb">96%</span>
-                <span class="smallt">Довольны результатом</span>
+            <div class="stats_item">
+                <span class="stats__value">96%</span>
+                <span class="stats__label">Довольны результатом</span>
             </div>
-            <div class="s_item">
-                <span class="bignumb">6 лет</span>
-                <span class="smallt">На рынке</span>
+            <div class="stats_item">
+                <span class="stats__value">6 лет</span>
+                <span class="stats__label">На рынке</span>
             </div>
         </div>
 
         <!-- КУРСЫ -->
-        <section class="CcC">
-            <div class="sec_head">
-                <h2 class="sec_ttl">
+        <section class="courses">
+            <div class="courses_header">
+                <h2 class="courses__title">
                     Наши
-                    <span>курсы</span>
+                    <span class="courses__title-accent">курсы</span>
                 </h2>
-                <a href="#" class="lnk1">Все курсы →</a>
+                <a href="#" class="courses__link">Все курсы →</a>
             </div>
             <div class="gr1">
                 <div class="crd">
