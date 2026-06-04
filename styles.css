@@ -41,7 +41,7 @@ body {
     border-bottom: 1px solid rgba(255,255,255,0.06); 
 }
 
-.nav__logo { 
+.logo { 
     font-family: var(--font-title); 
     font-size: 22px;
     font-weight: 900; 
@@ -234,11 +234,11 @@ body {
     text-align: center; 
 }
 
-.sTaT .s_item:last-child { 
+.stats_item:last-child { 
     border-right: none; 
 }
 
-.sTaT .s_item .bignumb { 
+.stats__value { 
     font-family: var(--font-title); 
     font-size: 52px; 
     font-weight: 900; 
@@ -248,7 +248,7 @@ body {
     margin-bottom: 8px; 
 }
 
-.sTaT .s_item .smallt { 
+.stats__label { 
     font-size: 12px; 
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
@@ -256,18 +256,18 @@ body {
 }
 
 /* COURSES */
-.CcC { 
+.courses { 
     padding: 100px 60px; 
 }
 
-.CcC .sec_head { 
+.courses__header { 
     display: flex; 
     justify-content: space-between; 
     align-items: flex-end; 
     margin-bottom: 56px; 
 }
 
-.CcC .sec_head .sec_ttl { 
+.courses__title { 
     font-family: var(--font-title);
     font-size: clamp(32px, 4vw, 52px); 
     font-weight: 900; 
@@ -275,11 +275,11 @@ body {
     line-height: 1.1; 
 }
 
-.CcC .sec_head .sec_ttl span { 
+.courses__title--accent { 
     color: var(--color-accent); 
 }
 
-.CcC .sec_head .lnk1 { 
+.courses__link { 
     color: var(--color-accent); 
     font-size: 13px; 
     font-weight: 700; 
@@ -290,13 +290,13 @@ body {
     padding-bottom: 2px; 
 }
 
-.CcC .gr1 { 
+.courses__c { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 2px; 
 }
 
-.CcC .gr1 .crd { 
+.courses__card { 
     background: #1a1a2e; 
     padding: 40px 36px; 
     position: relative; 
@@ -305,11 +305,11 @@ body {
     cursor: pointer; 
 }
 
-.CcC .gr1 .crd:hover { 
+.courses__card:hover { 
     transform: translateY(-4px); 
 }
 
-.CcC .gr1 .crd::before { 
+.courses__card::before { 
     content: ''; 
     position: absolute; 
     top: 0; 
@@ -320,11 +320,11 @@ body {
     transition: height 0.3s; 
 }
 
-.CcC .gr1 .crd:hover::before { 
+.courses__card:hover::before { 
     height: 100%; 
 }
 
-.CcC .gr1 .crd .ico_w { 
+.courses__icon { 
     width: 52px; 
     height: 52px; 
     background: rgba(255,60,95,0.12); 
@@ -335,7 +335,7 @@ body {
     font-size: 24px; 
 }
 
-.CcC .gr1 .crd .crd_t { 
+.courses__instrument { 
     font-family: var(--font-title); 
     font-size: 20px; 
     font-weight: 700; 
@@ -343,14 +343,14 @@ body {
     letter-spacing: -0.5px; 
 }
 
-.CcC .gr1 .crd .crd_d { 
+.courses__text { 
     font-size: 14px; 
     line-height: 1.7; 
     opacity: 0.6; 
     margin-bottom: 28px; 
 }
 
-.CcC .gr1 .crd .crd_meta { 
+.courses__meta { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -358,14 +358,14 @@ body {
     border-top: 1px solid var(--color-border); 
 }
 
-.CcC .gr1 .crd .crd_meta .lvl { 
+.courses__level { 
     font-size: 11px; 
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
     opacity: 0.45; 
 }
 
-.CcC .gr1 .crd .crd_meta .pr { 
+.courses__price { 
     font-family: var(--font-title); 
     font-size: 18px; 
     font-weight: 900; 
@@ -373,14 +373,14 @@ body {
 }
 
 /* FEATURED */
-.FtFt { 
+.featured { 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     min-height: 500px; 
     border-top: 1px solid var(--color-border); 
 }
 
-.FtFt .left_p { 
+.featured__left { 
     background: var(--color-accent); 
     padding: 80px 60px; 
     display: flex; 
@@ -388,7 +388,7 @@ body {
     justify-content: space-between; 
 }
 
-.FtFt .left_p .bigq { 
+.featured__quote { 
     font-family: var(--font-title); 
     font-size: clamp(28px, 3vw, 48px); 
     font-weight: 900; 
@@ -397,13 +397,13 @@ body {
     color: #fff; 
 }
 
-.FtFt .left_p .auth_r { 
+.featured__auth { 
     display: flex; 
     align-items: center; 
     gap: 16px; 
 }
 
-.FtFt .left_p .auth_r .ava { 
+.featured__ava { 
     width: 48px; 
     height: 48px; 
     border-radius: 50%; 
@@ -414,20 +414,20 @@ body {
     font-size: 20px; 
 }
 
-.FtFt .left_p .auth_r .auth_inf .auth_nm { 
+.featured___name { 
     font-family: var(--font-title); 
     font-size: 14px; 
     font-weight: 700; 
     color: #fff; 
 }
 
-.FtFt .left_p .auth_r .auth_inf .auth_pos { 
+.featured__pos { 
     font-size: 12px; 
     color: rgba(255,255,255,0.65); 
     margin-top: 2px; 
 }
 
-.FtFt .right_p { 
+.featured__right { 
     padding: 80px 60px; 
     background: #1a1a2e;
     display: flex; 
@@ -435,7 +435,7 @@ body {
     justify-content: center; 
 }
 
-.FtFt .right_p .r_tag { 
+.featured__tag { 
     font-size: 11px; 
     letter-spacing: 2px; 
     text-transform: uppercase; 
@@ -444,7 +444,7 @@ body {
     margin-bottom: 24px; 
 }
 
-.FtFt .right_p h3 { 
+.featured__title { 
     font-family: var(--font-title); 
     font-size: 36px; 
     font-weight: 900; 
@@ -452,21 +452,21 @@ body {
     margin-bottom: 20px; 
 }
 
-.FtFt .right_p p { 
+.featured__text { 
     font-size: 15px; 
     line-height: 1.75; 
     opacity: 0.6; 
     margin-bottom: 36px; 
 }
 
-.FtFt .right_p .list_f { 
+.featured__list { 
     list-style: none; 
     display: flex; 
     flex-direction: column; 
     gap: 12px; 
 }
 
-.FtFt .right_p .list_f li { 
+.featured__list li { 
     display: flex; 
     align-items: center; 
     gap: 12px; 
@@ -474,7 +474,7 @@ body {
     opacity: 0.8; 
 }
 
-.FtFt .right_p .list_f li::before { 
+.featured__list li::before { 
     content: '♪'; 
     color: var(--color-accent); 
     font-size: 16px; 
@@ -601,7 +601,7 @@ body {
     position: relative; 
 }
 
-.q_mrk { 
+.reviews__mark { 
     font-family: var(--font-title); 
     font-size: 80px; color: var(--color-accent); 
     opacity: 0.2; 
@@ -776,7 +776,7 @@ body {
 }
 
 /* WAVEFORM */
-.WvFm { 
+.waveform { 
     display: flex; 
     align-items: flex-end; 
     gap: 3px; 
@@ -794,16 +794,16 @@ body {
     animation: wave 1.2s ease-in-out infinite alternate; 
 }
 
-.WvFm .bar:nth-child(2n) { 
+.bar:nth-child(2n) { 
     opacity: 0.15; 
     animation-delay: 0.2s; 
 }
 
-.WvFm .bar:nth-child(3n) { 
+.bar:nth-child(3n) { 
     animation-delay: 0.4s; 
 }
 
-.WvFm .bar:nth-child(5n) { 
+.bar:nth-child(5n) { 
     animation-delay: 0.6s; 
     opacity: 0.5; 
 }
@@ -813,5 +813,5 @@ body {
         transform: scaleY(0.3); 
     } to { 
         transform: scaleY(1); 
-    } 
+    }
 }}
